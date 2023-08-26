@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #121214;
+  font-size: 1.6rem;
+
+  font-family: "League Spartan", sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+
+.page {
+  display: flex;
+}
+
+main {
+  padding: 5rem 3.6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  max-width: 50%;
+  height: 100vh;
+}
+
+main > img {
+  margin-bottom: 4.2rem;
+  width: 31rem;
+  height: 9.4rem;
+}
+
+section > h1 {
+  color: #08c05e;
+  font-family: "Work Sans", sans-serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+section > p {
+  margin-top: 1rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+section > span {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+label {
+  color: #a8a8a8;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+input {
+  padding: 1.7rem 1.5rem;
+  outline: none;
+
+  border: none;
+  border-left: 4px solid #04d361;
+  background-color: white;
+  width: 95%;
+
+  color: #6a6a6a;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+input::placeholder {
+  color: #6a6a6a;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 0;
+
+  position: relative;
+  z-index: 1;
+  width: 120%;
+}
+
+button {
+  padding: 2.8rem 3rem;
+  background: #8257e5;
+  border: none;
+
+  background-image: url("./assets/send.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 4.95rem;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #552fae;
+  }
+}
+
+main > a {
+  color: #8257e5;
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+
+  text-decoration: none;
+  position: relative;
+
+  &:hover {
+    color: #ac8df7;
+  }
+
+  & > img {
+    margin-left: 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+aside {
+  background-image: url("./assets/image.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 50%;
+  min-height: 100vh;
+}
